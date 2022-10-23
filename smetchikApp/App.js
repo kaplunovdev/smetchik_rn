@@ -1,6 +1,10 @@
 
 import React from 'react';
-
+import { BigButton } from '../smetchikApp/components/BigButton'
+import { HomeScreen } from '../smetchikApp/components/HomeScreen'
+import { MyStack } from '../smetchikApp/components/MyStack'
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {
   SafeAreaView,
   ScrollView,
@@ -9,36 +13,34 @@ import {
   Text,
   useColorScheme,
   View,
+  Button,
+  Pressable,
+  TouchableOpacity,
+
 } from 'react-native';
+import { SmetaList } from './components/SmetaList';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+const Stack = createNativeStackNavigator();
 
 
-const App=()  => {
- 
+const App = (props) => {
+
+
   return (
-    <View>
-      <Text style={styles.titleApp}>Сметчик</Text>
-    </View>
-  
+
+
+
+    <MyStack />
+
+
+
+
+
   );
 };
 
-const styles = StyleSheet.create({
-
-  titleApp: {
-    fontSize: 55,
-    textAlign:'center'
-    
-  },
 
 
-});
+
 
 export default App;
