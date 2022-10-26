@@ -17,6 +17,7 @@ import {
   Pressable,
   TouchableOpacity,
 
+
 } from 'react-native';
 import { SmetaList } from './components/SmetaList';
 
